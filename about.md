@@ -13,11 +13,11 @@ title: About Me
 
 <p class="links">Links:</p>
 
-* [linkedin.com](https://linkedin.com/in/sashasyedin)
-* [github.com](https://github.com/sashasyedin)
-* [leetcode.com](https://leetcode.com/u/sashasyedin)
-* [codewars.com](https://codewars.com/users/sashasyedin)
-* [credly.com](https://www.credly.com/users/sashasyedin)
+* [linkedin.com](https://linkedin.com/in/yet-another-alexander)
+* [github.com](https://github.com/yet-another-alexander)
+* [leetcode.com](https://leetcode.com/u/yet-another-alexander)
+* [codewars.com](https://codewars.com/users/yet-another-alexander)
+* [credly.com](https://www.credly.com/users/yet-another-alexander)
 
 <div class="contacts">
 	{% include svg-icons.html %}
