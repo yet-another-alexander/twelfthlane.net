@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>{{ site.title }} | {{ page.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Alexander Ivanov">
 	<meta name="color-scheme" content="light dark">
 
-	<link href="/css/custom.css" rel="stylesheet">
+	{% seo %}
 
+	<link href="/css/custom.css" rel="stylesheet">
 	<link rel="shortcut icon" href="/images/nameplate16x16.png">
 </head>
 <body{% if page.layout == "post" %} class="post-page"{% endif %}>
