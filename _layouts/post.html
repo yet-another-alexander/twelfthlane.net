@@ -4,16 +4,18 @@ post: true
 ---
 <article>
 	<header>
-		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		{% assign words = content | number_of_words %}
+		{% assign minutes = words | divided_by: 200 | plus: 1 %}
+		<h1><a href="{{ page.url }}">{{ page.title }}</a><span class="read-time">{{ minutes }} min read</span></h1>
+		{% if page.tags %}
 		<p class="post-meta">
-			{% if page.tags %}
-				<span class="tags">
-				{% for tag in page.tags %}
-					<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
-				{% endfor %}
-				</span>
-			{% endif %}
+			<span class="tags">
+			{% for tag in page.tags %}
+				<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+			{% endfor %}
+			</span>
 		</p>
+		{% endif %}
 	</header>
 
 	<div class="prose">
@@ -22,5 +24,22 @@ post: true
 
 	<footer>
 		<p class="well">{{ page.date | date_to_long_string }}</p>
+
+		{% if page.previous or page.next %}
+		<nav class="post-nav">
+			{% if page.next %}
+			<a class="post-nav-link prev" href="{{ page.next.url }}">
+				<span class="post-nav-label">newer</span>
+				<span class="post-nav-title">{{ page.next.title }}</span>
+			</a>
+			{% endif %}
+			{% if page.previous %}
+			<a class="post-nav-link next" href="{{ page.previous.url }}">
+				<span class="post-nav-label">older</span>
+				<span class="post-nav-title">{{ page.previous.title }}</span>
+			</a>
+			{% endif %}
+		</nav>
+		{% endif %}
 	</footer>
 </article>

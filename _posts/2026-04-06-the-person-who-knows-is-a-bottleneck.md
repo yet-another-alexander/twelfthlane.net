@@ -1,6 +1,7 @@
 ---
 title: The Person Who Knows Is a Bottleneck
 layout: post
+description: Two developers, same tool, same codebase — wildly different results. The difference isn't the model, it's the prompts. Why the person who knows how to ask is the new bottleneck.
 tags:
   - AI
   - coding

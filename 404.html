@@ -1,0 +1,19 @@
+---
+layout: default
+title: 404
+permalink: /404.html
+---
+<section class="notfound">
+	<p class="eyebrow">error</p>
+	<h1>404: command not found</h1>
+	<pre class="notfound-shell"><span class="prompt">$</span> cd {{ page.url | default: "the-page-you-wanted" }}
+cd: no such file or directory</pre>
+	<p>The path you followed doesn't resolve. It may have moved, or never existed.</p>
+	<p class="notfound-links">
+		<a href="/">~/ home</a>
+		<span class="sep">&middot;</span>
+		<a href="/blog">$ blog</a>
+		<span class="sep">&middot;</span>
+		<a href="/tags/"># tags</a>
+	</p>
+</section>

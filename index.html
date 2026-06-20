@@ -6,7 +6,11 @@ title: Homepage
 <section class="hero">
 	<p class="eyebrow">latest post</p>
 	<h1><a href="{{ latest.url }}">{{ latest.title }}</a></h1>
+	{% if latest.description %}
+	<p>{{ latest.description }}</p>
+	{% else %}
 	<p>{{ latest.content | strip_html | truncate: 220 }}</p>
+	{% endif %}
 </section>
 
 <p class="section-label">recent</p>
