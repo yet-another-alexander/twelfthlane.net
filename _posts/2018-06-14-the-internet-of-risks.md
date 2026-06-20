@@ -1,7 +1,6 @@
 ---
 title: The Internet of Risks
 layout: post
-subtitle: IoT
 tags: IoT
 ---
 Internet of Things (IoT) is one of the biggest tech trends to emerge in recent years. Today every big IT organization wants to ride the so-called "IoT wave". It's being made (sometimes forcefully thrusted) to be part of the road map. It's not just the corporates, governments want to be at the forefront of technological progress as well. They are making IoT part of their strategy and are allocating significant budget in this direction. "Smart city", "Smart Energy", "Smart Industry" are the sacred words in development plans of many governments.

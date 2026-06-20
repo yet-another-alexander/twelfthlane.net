@@ -1,7 +1,6 @@
 ---
 title: "Sleep Tech: a Great Night's Sleep..."
 layout: post
-subtitle: Sleep Technology
 tags: sleeptech
 ---
 From Wiki:

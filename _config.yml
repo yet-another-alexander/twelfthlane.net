@@ -1,11 +1,6 @@
 title: twelfthlane.net -12th-ln-&gt;
 permalink: /:year/:month/:day/:title
 url: http://twelfthlane.net
-contact-links:
-  skype: live:sashasyedin
-  telegram: sashasyedin
-  email: sashasyedin@outlook.com
-  discord: 1115970554227335209
 exclude:
   - README.md
   - CNAME

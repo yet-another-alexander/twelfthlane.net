@@ -1,7 +1,6 @@
 ---
 title: Privacy? They've Never Heard of That Server
 layout: post
-subtitle: Privacy
 tags: privacy
 ---
 Privacy implies a separation of thought, speech, activity or other action from the larger world around us. If you look back in history, the Cynics were perhaps the best example of way of life in which there was no privacy. They practiced shamelessness and did everything in public, preferred a simple lifestyle and actually avoided the entanglements of possessions. Most cultures ultimately have evolved into a balance of public and private activity (while sometimes ignoring any distinction between public and private property rights).

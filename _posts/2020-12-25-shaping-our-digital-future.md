@@ -1,7 +1,6 @@
 ---
 title: Shaping Our Digital Future
 layout: post
-subtitle: Digital Future
 ---
 The coronavirus pandemic has brought many changes. It has forced us all to find new ways of working, interacting and living. It has raised questions about how our societies are ordered, and about where we want and need to invest for the future. It has shown us our strengths and highlighted our weaknesses. It has set us new challenges, not the least of which is to try to find a cure. Digital technology is a key component of our collective effort to tackle the virus and support our new ways of living and working reality during this exceptional time.
 

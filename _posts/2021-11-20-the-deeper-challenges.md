@@ -1,7 +1,6 @@
 ---
 title: The Deeper Challenges
 layout: post
-subtitle: Deep Tech Industry
 tags: deeptech
 ---
 Deep tech is often defined as being start-up companies that develop new products based on "scientific innovation or meaningful engineering innovation". This is as opposed to technological development driven by a specific customer demand.

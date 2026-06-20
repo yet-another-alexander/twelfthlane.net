@@ -1,7 +1,6 @@
 ---
 title: "The Quantum Threat: It May Be Time to Sound the Alarm"
 layout: post
-subtitle: Quantum Computers
 tags: quantum-computing
 ---
 "Quantum computers are able to break even the most secure encryption algorithm."<br />

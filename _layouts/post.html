@@ -4,16 +4,23 @@ post: true
 ---
 <article>
 	<header>
-		<div class="page-header">
-			<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-		</div>
-	</header>
-	
-	{{ content }}
-	
-	<footer>
-		<p class="well well-small">
-			@sashasyedin / {{ page.date | date_to_long_string }}
+		<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+		<p class="post-meta">
+			{% if page.tags %}
+				<span class="tags">
+				{% for tag in page.tags %}
+					<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+				{% endfor %}
+				</span>
+			{% endif %}
 		</p>
+	</header>
+
+	<div class="prose">
+		{{ content }}
+	</div>
+
+	<footer>
+		<p class="well">{{ page.date | date_to_long_string }}</p>
 	</footer>
 </article>

@@ -2,39 +2,39 @@
 layout: default
 title: Homepage
 ---
-<div class="row-fluid">
-	<h2 class="small"><a href="{{ site.posts.first.url }}">{{ site.posts.first.title }}</a></h2>
-	<p>{{ site.posts.first.content | truncate:500 }}</p>
-</div>
+{% assign latest = site.posts.first %}
+<section class="hero">
+	<p class="eyebrow">latest post</p>
+	<h1><a href="{{ latest.url }}">{{ latest.title }}</a></h1>
+	<p>{{ latest.content | strip_html | truncate: 220 }}</p>
+</section>
 
-<div class="row-fluid">
-	{% for post in site.posts limit:3 %}
-		{% if forloop.first %}
-		{% else %}
-			<div class="span6">
-				<h2 class="small"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-				<p>{{ post.content | truncate:300 }}</p>
+<p class="section-label">recent</p>
+<ul class="post-list">
+	{% for post in site.posts limit:6 %}
+		{% unless forloop.first %}
+		<li>
+			<div class="post-item">
+				<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+				<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
 			</div>
-		{% endif %}
+		</li>
+		{% endunless %}
 	{% endfor %}
-</div>
+</ul>
 
-<div class="row-fluid">
-	<div class="span12">
-		<h2 class="small"><a href="{{ page.url }}">Explore Topics</a></h2>
-		<p>
-			{% assign all_tags = "" | split: "" %}
-			{% for post in site.posts %}
-				{% for tag in post.tags %}
-					{% unless all_tags contains tag %}
-						{% assign all_tags = all_tags | push: tag %}
-					{% endunless %}
-				{% endfor %}
-			{% endfor %}
-			{% assign all_tags = all_tags | sort %}
-			{% for tag in all_tags %}
-				<a class="tag">{{ tag }}</a>
-			{% endfor %}
-		</p>
-	</div>
+<p class="section-label">explore topics</p>
+<div class="tags">
+	{% assign all_tags = "" | split: "" %}
+	{% for post in site.posts %}
+		{% for tag in post.tags %}
+			{% unless all_tags contains tag %}
+				{% assign all_tags = all_tags | push: tag %}
+			{% endunless %}
+		{% endfor %}
+	{% endfor %}
+	{% assign all_tags = all_tags | sort_natural %}
+	{% for tag in all_tags %}
+		<a class="tag" href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
+	{% endfor %}
 </div>

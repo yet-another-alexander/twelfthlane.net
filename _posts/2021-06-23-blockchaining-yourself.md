@@ -1,7 +1,6 @@
 ---
 title: Blockchaining Yourself
 layout: post
-subtitle: Blockchain & Biotech
 tags:
   - privacy
   - biotech

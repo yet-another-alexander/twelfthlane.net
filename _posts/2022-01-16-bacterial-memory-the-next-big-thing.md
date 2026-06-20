@@ -1,7 +1,6 @@
 ---
 title: "Bacterial Memory: The Next Big Thing?"
 layout: post
-subtitle: Biotech & Data Storage
 tags: biotech
 ---
 DNA is an incredibly efficient way to store data: It can store billions of base pair "bits" — the entire set of instructions to make a whole human, in a single, microscopic cell. While a computer stores information as ones and zeros, in DNA data storage the four nucleotide bases (A, C, G, T) store and encode data. Our genes are simply long or short runs of sequences of those bases.

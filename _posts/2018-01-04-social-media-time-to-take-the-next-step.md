@@ -1,7 +1,6 @@
 ---
 title: "Social Media: Time to Take the Next Step"
 layout: post
-subtitle: Social Networking
 tags: privacy
 ---
 We are living more and more of our lives online (sometimes it even scares me). Social networks has brought us closer together, enriched our business relationships, and even made us more productive (let's just pretend that all of this is true). But do you know that most of these platforms are "centralized"? It means that there is only one entity responsible for your account access. You lost access to any content you choose to upload (or share) privately (or publicly) on their platform. But even so, many users aren't crazy at the idea of large entities controlling access to their content, which has resulting in many ownership claims that get recycled from time to time. It's a valid concern, especially when the platform isn't 100% clear on how they will use your content, primarily for monetization efforts.

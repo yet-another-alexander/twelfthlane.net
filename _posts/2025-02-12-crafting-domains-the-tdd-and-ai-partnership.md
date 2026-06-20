@@ -1,7 +1,6 @@
 ---
 title: "Crafting Domains: The TDD and AI Partnership"
 layout: post
-subtitle: TDD and AI
 tags:
   - AI
   - coding

@@ -1,7 +1,6 @@
 ---
 title: The Person Who Knows Is a Bottleneck
 layout: post
-subtitle: Valuable Knowledge
 tags:
   - AI
   - coding

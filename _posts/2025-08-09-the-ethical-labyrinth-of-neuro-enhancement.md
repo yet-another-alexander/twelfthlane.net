@@ -1,7 +1,6 @@
 ---
 title: The Ethical Labyrinth of Neuro Enhancement
 layout: post
-subtitle: Neuroenhancement
 tags: biotech
 ---
 In recent years, there has been a remarkable rise in the number of startups focusing on neuroenhancement technologies. These innovative companies are applying the power of science and technology to push the boundaries of human cognitive performance. Actually people have always dreamed of having smarter and faster brains. From old herbal remedies to modern-day pills and future brain links, the goal of making our brains better than they naturally are is becoming real. But as science moves ahead, big ethical problems come up. These new technologies could change our future in amazing ways. However, they also bring up serious questions about fairness, safety and who we are.

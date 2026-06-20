@@ -1,0 +1,39 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+{% assign all_tags = "" | split: "" %}
+{% for post in site.posts %}
+	{% for tag in post.tags %}
+		{% unless all_tags contains tag %}
+			{% assign all_tags = all_tags | push: tag %}
+		{% endunless %}
+	{% endfor %}
+{% endfor %}
+{% assign all_tags = all_tags | sort_natural %}
+
+<p class="section-label">all topics</p>
+<div class="tags">
+	{% for tag in all_tags %}
+		<a class="tag" href="#{{ tag | slugify }}">{{ tag }}</a>
+	{% endfor %}
+</div>
+
+{% for tag in all_tags %}
+	<section id="{{ tag | slugify }}" class="tag-section">
+		<p class="tag-heading">{{ tag }}</p>
+		<ul class="post-list">
+			{% for post in site.posts %}
+				{% if post.tags contains tag %}
+				<li>
+					<div class="post-item">
+						<a class="title" href="{{ post.url }}">{{ post.title }}</a>
+						<span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+					</div>
+				</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</section>
+{% endfor %}

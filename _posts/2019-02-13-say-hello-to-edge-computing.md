@@ -1,7 +1,6 @@
 ---
 title: Say Goodbye to the Cloud - Say Hello to Edge Computing
 layout: post
-subtitle: Edge Computing
 tags: cloud-computing
 ---
 In elementary terms, Cloud computing is the technology of storing and accessing data/applications over the Internet rather than keeping that information in on-premises computer systems. With low maintenance and charges based on usage, Cloud computing's layered architecture allows the client to purchase services at different level of abstraction, depending upon their requirements: SaaS, PaaS, IaaS. It gives location independence as users can access these services anywhere with an Internet connection and a standard web browser.

@@ -1,7 +1,6 @@
 ---
 title: Preparing for the Metaverse
 layout: post
-subtitle: Metaverse
 tags:
   - VR
   - AR

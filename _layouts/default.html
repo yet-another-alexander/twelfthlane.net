@@ -5,41 +5,30 @@
 	<title>{{ site.title }} | {{ page.title }}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Alexander Ivanov">
+	<meta name="color-scheme" content="light dark">
 
-	<link href="/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/css/custom.css" rel="stylesheet">
-	
-    <!--[if lt IE 9]>
-    <![endif]-->
-	
+
 	<link rel="shortcut icon" href="/images/nameplate16x16.png">
 </head>
-<body>
+<body{% if page.layout == "post" %} class="post-page"{% endif %}>
 	<div class="container-narrow">
-		<div class="masthead">
-			<ul class="nav nav-pills pull-right">
-				<li{% if page.url == "/" %} class="active"{% endif %}><a href="/">Home</a></li>
-				<li{% if page.url == "/blog" or page.path contains '_posts' %} class="active"{% endif %}><a href="/blog">Blog</a></li>
-				<li{% if page.url == "/about" %} class="active"{% endif %}><a href="/about">About</a></li>
-			</ul>
-			<div class="page-header">
-				<h3 class="muted">
-					<a href="/">-12th-ln-&gt;</a>
-				</h3>
-			</div>
-		</div>
-		
-		{{ content }}
-		
-		<hr>
+		<header class="masthead">
+			<a class="brand" href="/">-12th-ln-&gt;<span class="caret"></span></a>
+			<nav class="nav">
+				<a href="/"{% if page.url == "/" %} class="active"{% endif %}><span class="label">home</span></a>
+				<a href="/blog"{% if page.url == "/blog" or page.path contains '_posts' %} class="active"{% endif %}><span class="label">blog</span></a>
+				<a href="/about"{% if page.url == "/about" %} class="active"{% endif %}><span class="label">about</span></a>
+			</nav>
+		</header>
 
-		<div class="footer muted row-fluid">
-			<p class="text-center">
-				&copy; 2026 Alexander Ivanov. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>
-			</p>
-		</div>
-	</div> <!-- /container -->
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/bootstrap.js"></script>
+		<main>
+			{{ content }}
+		</main>
+
+		<footer class="footer">
+			<span class="prompt">$</span> &copy; 2026 Alexander Ivanov &middot; built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>
+		</footer>
+	</div>
 </body>
 </html>

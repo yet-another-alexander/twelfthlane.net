@@ -1,7 +1,6 @@
 ---
 title: An Overview of Large Language Models
 layout: post
-subtitle: Large Language Models
 tags: AI
 ---
 You probably use an Large Language Model (LLM) every day without even knowing it – the autocomplete feature on many search engines is one of the most widely-known applications of LLMs. But these models can also be used for tasks such as part-of-speech tagging, automatic text generation, and machine translation. As the size and capacity of Large Language Models continue to grow, so does their potential. It is likely that LLMs will soon become invaluable in a variety of industries and fields. So if you want to stay ahead of the curve, it's time to start getting to know LLMs.
