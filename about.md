@@ -5,7 +5,9 @@ title: About Me
 <p class="section-label">whoami</p>
 
 <div class="prose">
-	<p>Hi there :wave: I'm Alexander, a software engineer currently living in the Netherlands. From time to time I write blog posts on what I'm working on, topics that interest me or just share some thoughts on our life. Feel free to reach out, I'm always up for a chat about code, side projects or the best coffee spots in Amsterdam.</p>
+	<p>
+		Hi there :wave: I'm Alexander, a software engineer currently living in the Netherlands. From time to time I write blog posts on what I'm working on, topics that interest me or just share some thoughts on our life. These pages are mostly a place where I collect reflections and share them with friends, but if you happen to find your way here, you're very welcome too. Feel free to reach out if something resonates with you.
+	</p>
 </div>
 
 ![photo-of-me](/images/photo.jpg){: .img-rounded }

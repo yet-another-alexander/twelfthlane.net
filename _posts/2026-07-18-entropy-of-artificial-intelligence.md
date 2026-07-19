@@ -7,9 +7,9 @@ tags:
   - philosophy
 ---
 
-While visiting Hamburger Bahnhof, the former railway station turned contemporary art museum in Berlin, I came across a work by [materialistin] — *Matter of Care, Care of Matter*.
+While visiting Hamburger Bahnhof, the former railway station turned contemporary art museum in Berlin, I came across *Entropy*, a work featured in *Matter of Care, Care of Matter*, an exhibition by the artist collective [materialistin].
 
-I don't want to write about the piece itself. It just gave me a starting point for a different thought, one I'd been circling for a while without a good way to say it.
+I don't want to write about the work itself. It just gave me a starting point for a different thought, one I'd been circling for a while without a good way to say it.
 
 Every complex system needs care. Matter left unattended slowly falls apart. Systems nobody understands eventually start doing things nobody asked for.
 
