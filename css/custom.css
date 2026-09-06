@@ -102,7 +102,7 @@ main p a:hover,
   color: var(--text);
   display: inline-flex;
   align-items: baseline;
-  min-width: 18ch; /* fits the longest rotating phrase (14 chars); keeps nav from shifting */
+  min-width: 20ch; /* fits the longest rotating phrase (16 chars); keeps nav from shifting */
   white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }

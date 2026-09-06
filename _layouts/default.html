@@ -40,15 +40,15 @@
 	(function () {
 		var phrases = [
 			"Brain first", "Still thinking", "Think first", "Ask better", "Know the why",
-			"Fight entropy", "Understand it", "Question hype", "Stay curious", "Read the code",
+			"Fight entropy", "Understand it", "No silver bullet", "Stay curious", "Read the code",
 			"Write to think", "Doubt, verify", "Test first", "Slow down", "In the loop",
 			"Own your mind", "Rambling", "Reflecting", "Mind the gap", "Guard privacy",
 			"Debug yourself", "Prompt wisely", "Pseudocode it", "Red, green, go", "To the edge",
 			"Verify first", "Just a tool", "Keep learning", "Stay skeptical", "Less noise",
 			"Think slowly", "Know the stack", "Fewer, better", "Go deeper", "Ask why twice",
-			"Human first", "Encrypt it", "Curate inputs", "Dream in VR", "Mind over code",
+			"Human first", "Encrypt it", "Curate inputs", "Measure first", "Mind over code",
 			"Design domains", "Name it well", "Refactor often", "Memory matters", "Shape tomorrow",
-			"Enhance wisely", "Share the how", "Check its work", "See the system", "Mind the risks"
+			"Enhance wisely", "Share the how", "Trust nothing", "Mind the risks", "Convention wins"
 		];
 		var el = document.querySelector(".brand-word");
 		if (!el) return;
@@ -60,7 +60,7 @@
 		var current = pick(el.textContent);
 		el.textContent = current;
 		if (reduced) return;
-		var HOLD = 4200, ERASE = 45, TYPE = 75;
+		var HOLD = 8000, ERASE = 45, TYPE = 75;
 		var erase = function (next) {
 			if (el.textContent.length) {
 				el.textContent = el.textContent.slice(0, -1);
