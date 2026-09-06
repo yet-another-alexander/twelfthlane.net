@@ -1,10 +1,10 @@
-title: twelfthlane
+title: Developer Ramblings of Alexander Ivanov
 description: >-
   Notes on software engineering, AI, and the technology shaping how we
   work and live — by Alexander Ivanov, a software engineer in the Netherlands.
 author: Alexander Ivanov
 permalink: /:year/:month/:day/:title
-url: https://twelfthlane.net
+url: https://alexanderivanov.me
 exclude:
   - README.md
   - CNAME
