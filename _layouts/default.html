@@ -38,17 +38,18 @@
 	</div>
 	<script>
 	(function () {
+		// Keep every phrase at 11 characters or fewer so the brand and nav share one line on phones.
 		var phrases = [
-			"Brain first", "Still thinking", "Think first", "Ask better", "Know the why",
-			"Fight entropy", "Understand it", "No silver bullet", "Stay curious", "Read the code",
-			"Write to think", "Doubt, verify", "Test first", "Slow down", "In the loop",
-			"Own your mind", "Rambling", "Reflecting", "Mind the gap", "Guard privacy",
-			"Debug yourself", "Prompt wisely", "Pseudocode it", "Red, green, go", "To the edge",
-			"Verify first", "Just a tool", "Keep learning", "Stay skeptical", "Less noise",
-			"Think slowly", "Know the stack", "Fewer, better", "Go deeper", "Ask why twice",
-			"Human first", "Encrypt it", "Curate inputs", "Measure first", "Mind over code",
-			"Design domains", "Name it well", "Refactor often", "Memory matters", "Shape tomorrow",
-			"Enhance wisely", "Share the how", "Trust nothing", "Mind the risks", "Convention wins"
+			"Brain first", "Think first", "Ask better", "Know why", "Know limits",
+			"Understand", "No magic", "Be curious", "Read code", "Write first",
+			"Doubt it", "Test first", "Slow down", "In the loop", "Own it",
+			"Rambling", "Reflecting", "Mind gaps", "Guard data", "Debug self",
+			"Prompt well", "Pseudocode", "Red, green", "To the edge", "Verify",
+			"Just a tool", "Learn daily", "Stay sharp", "Less noise", "Think slow",
+			"Fewer parts", "Go deeper", "Ask why", "Human first", "Encrypt it",
+			"Curate it", "Measure it", "Design well", "Name things", "Refactor",
+			"Remember", "Small steps", "Simplify", "Stay awake", "Trust less",
+			"Mind risks", "Boring wins", "Share how", "Question it", "Stay human"
 		];
 		var el = document.querySelector(".brand-word");
 		if (!el) return;

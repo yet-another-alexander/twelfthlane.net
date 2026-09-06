@@ -102,7 +102,6 @@ main p a:hover,
   color: var(--text);
   display: inline-flex;
   align-items: baseline;
-  min-width: 20ch; /* fits the longest rotating phrase (16 chars); keeps nav from shifting */
   white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }
@@ -440,8 +439,9 @@ h1 .read-time::before { content: "~ "; color: var(--accent); }
 /* ---------- Responsive ---------- */
 @media (max-width: 540px) {
   body { font-size: 16px; }
-  .masthead { padding-top: 22px; }
-  .brand { font-size: 19px; }
+  .masthead { padding-top: 22px; gap: 8px; }
+  .brand { font-size: 17px; }
+  .nav { font-size: 13.5px; gap: 12px; }
   .post-item .date { margin-left: 0; width: 100%; }
   .post-nav { flex-direction: column; }
   .post-nav-link.next { text-align: left; align-items: flex-start; }
