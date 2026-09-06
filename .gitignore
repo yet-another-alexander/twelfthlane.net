@@ -5,3 +5,5 @@ _site/
 .bundle/
 vendor/
 */rules/common
+.DS_Store
+.claude/
