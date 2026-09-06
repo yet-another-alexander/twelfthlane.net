@@ -20,7 +20,7 @@
 <body{% if page.layout == "post" %} class="post-page"{% endif %}>
 	<div class="container-narrow">
 		<header class="masthead">
-			<a class="brand" href="/">-12th-ln-&gt;<span class="caret"></span></a>
+			<a class="brand" href="/">-<span class="brand-word">Brain first</span>-&gt;<span class="caret"></span></a>
 			<nav class="nav">
 				<a href="/"{% if page.url == "/" %} class="active"{% endif %}><span class="label">home</span></a>
 				<a href="/blog"{% if page.url == "/blog" or page.path contains '_posts' %} class="active"{% endif %}><span class="label">blog</span></a>
@@ -36,5 +36,54 @@
 			<span class="prompt">$</span> &copy; 2026 Alexander Ivanov &middot; built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>
 		</footer>
 	</div>
+	<script>
+	(function () {
+		var phrases = [
+			"Brain first", "Still thinking", "Think first", "Ask better", "Know the why",
+			"Fight entropy", "Understand it", "Question hype", "Stay curious", "Read the code",
+			"Write to think", "Doubt, verify", "Test first", "Slow down", "In the loop",
+			"Own your mind", "Rambling", "Reflecting", "Mind the gap", "Guard privacy",
+			"Debug yourself", "Prompt wisely", "Pseudocode it", "Red, green, go", "To the edge",
+			"Verify first", "Just a tool", "Keep learning", "Stay skeptical", "Less noise",
+			"Think slowly", "Know the stack", "Fewer, better", "Go deeper", "Ask why twice",
+			"Human first", "Encrypt it", "Curate inputs", "Dream in VR", "Mind over code",
+			"Design domains", "Name it well", "Refactor often", "Memory matters", "Shape tomorrow",
+			"Enhance wisely", "Share the how", "Check its work", "See the system", "Mind the risks"
+		];
+		var el = document.querySelector(".brand-word");
+		if (!el) return;
+		var pick = function (not) {
+			var p; do { p = phrases[Math.floor(Math.random() * phrases.length)]; } while (p === not);
+			return p;
+		};
+		var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+		var current = pick(el.textContent);
+		el.textContent = current;
+		if (reduced) return;
+		var HOLD = 4200, ERASE = 45, TYPE = 75;
+		var erase = function (next) {
+			if (el.textContent.length) {
+				el.textContent = el.textContent.slice(0, -1);
+				setTimeout(function () { erase(next); }, ERASE);
+			} else {
+				type(next, 0);
+			}
+		};
+		var type = function (word, i) {
+			if (i <= word.length) {
+				el.textContent = word.slice(0, i);
+				setTimeout(function () { type(word, i + 1); }, TYPE);
+			} else {
+				current = word;
+				setTimeout(cycle, HOLD);
+			}
+		};
+		var cycle = function () {
+			if (document.hidden) { setTimeout(cycle, HOLD); return; }
+			erase(pick(current));
+		};
+		setTimeout(cycle, HOLD);
+	})();
+	</script>
 </body>
 </html>
