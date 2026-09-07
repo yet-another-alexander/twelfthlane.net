@@ -20,7 +20,7 @@
 <body{% if page.layout == "post" %} class="post-page"{% endif %}>
 	<div class="container-narrow">
 		<header class="masthead">
-			<a class="brand" href="/">-<span class="brand-word">Brain first</span>-&gt;<span class="caret"></span></a>
+			<a class="brand" href="/"><span class="brand-word">brain first</span><span class="caret"></span></a>
 			<nav class="nav">
 				<a href="/"{% if page.url == "/" %} class="active"{% endif %}><span class="label">home</span></a>
 				<a href="/blog"{% if page.url == "/blog" or page.path contains '_posts' %} class="active"{% endif %}><span class="label">blog</span></a>
@@ -40,14 +40,14 @@
 	(function () {
 		// Keep every phrase at 11 characters or fewer so the brand and nav share one line on phones.
 		var phrases = [
-			"Brain first", "Think first", "Ask better", "Know why", "Know limits",
-			"Understand", "No magic", "Be curious", "Read code", "Doubt it",
-			"Test first", "Slow down", "In the loop", "Own it", "Mind gaps",
-			"Guard data", "Debug self", "Prompt well", "Verify", "Just a tool",
-			"Learn daily", "Stay sharp", "Think slow", "Ask why", "Human first",
-			"Encrypt it", "Curate it", "Measure it", "Design well", "Name things",
-			"Refactor", "Remember", "Small steps", "Simplify", "Stay awake",
-			"Trust less", "Mind risks", "Share how", "Question it", "Stay human"
+			"brain first", "think first", "ask better", "know why", "know limits",
+			"understand", "no magic", "be curious", "read code", "doubt it",
+			"test first", "slow down", "in the loop", "own it", "mind gaps",
+			"guard data", "debug self", "prompt well", "verify", "just a tool",
+			"learn daily", "stay sharp", "think slow", "ask why", "human first",
+			"encrypt it", "curate it", "measure it", "design well", "name things",
+			"refactor", "remember", "small steps", "simplify", "stay awake",
+			"trust less", "mind risks", "share how", "question it", "stay human"
 		];
 		var el = document.querySelector(".brand-word");
 		if (!el) return;

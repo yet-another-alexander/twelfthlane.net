@@ -105,14 +105,16 @@ main p a:hover,
   white-space: nowrap;
 }
 .brand:hover { color: var(--accent); }
+/* An empty word would drop the text baseline and collapse the header for a frame between phrases. */
+.brand-word:empty::before { content: "\200B"; }
 
 .caret {
   display: inline-block;
   width: 9px;
-  height: 1.05em;
+  height: 1em;
   margin-left: 4px;
   background: var(--accent);
-  transform: translateY(2px);
+  transform: translateY(0.2em); /* terminal-style: bottom at descender depth, top just above ascenders */
   animation: blink 1.15s steps(1) infinite;
 }
 @keyframes blink { 50% { opacity: 0; } }
